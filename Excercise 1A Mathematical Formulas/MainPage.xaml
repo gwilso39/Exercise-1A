@@ -1,0 +1,48 @@
+﻿<Page
+    x:Class="Excercise_1A_Mathematical_Formulas.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Excercise_1A_Mathematical_Formulas"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock HorizontalAlignment="Left" Height="37" Margin="86,52,0,0" Text="Enter Radius :" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" FontSize="20"/>
+        <TextBox x:Name="circleRadius" HorizontalAlignment="Left" Height="44" Margin="216,46,0,0" Text="Radius" VerticalAlignment="Top" Width="172" InputScope="Number" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Height="42" Margin="60,112,0,0" Text="Circumference =" TextWrapping="Wrap" VerticalAlignment="Top" Width="158" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="16,2,0,0" Text="Calculate the Circumference and Area of a Circle" TextWrapping="Wrap" VerticalAlignment="Top" Width="604" FontSize="26" FontWeight="Bold"/>
+        <TextBlock x:Name="answerCircum" HorizontalAlignment="Left" Height="36" Margin="220,114,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" FontSize="20"/>
+        <TextBlock x:Name="answerArea" HorizontalAlignment="Left" Height="34" Margin="218,154,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="168" FontSize="20"/>
+        <Button x:Name="goCircle" Content="GO" HorizontalAlignment="Left" Height="40" Margin="400,48,0,0" VerticalAlignment="Top" Width="74" FontSize="20" Click="okGoCircle"/>
+        <TextBlock HorizontalAlignment="Left" Height="32" Margin="146,154,0,0" Text="Area =" TextWrapping="Wrap" VerticalAlignment="Top" Width="62" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="20,204,0,0" Text="Calculate the Volume of a Hemisphere" TextWrapping="Wrap" VerticalAlignment="Top" Width="480" FontSize="26" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="74,254,0,0" Text="Enter Radius =" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" FontSize="20"/>
+        <TextBox x:Name="hemiRadius" HorizontalAlignment="Left" Height="44" Margin="218,246,0,0" Text="Radius" VerticalAlignment="Top" Width="172" FontSize="20"/>
+        <Button x:Name="goHemi" Content="GO" HorizontalAlignment="Left" Height="40" Margin="400,248,0,0" VerticalAlignment="Top" Width="74" FontSize="20" Click="okGoHemi"/>
+        <TextBlock HorizontalAlignment="Left" Height="46" Margin="6,304,0,0" Text="Hemisphere Volume =" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" FontSize="20"/>
+        <TextBlock x:Name="answerHemiVol" HorizontalAlignment="Left" Height="36" Margin="222,304,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="664,4,0,0" Text="Calculate the Area of a Triangle" TextWrapping="Wrap" VerticalAlignment="Top" Width="398" FontSize="26" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="38" Margin="650,54,0,0" Text="Enter length of side 1 =" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="650,102,0,0" Text="Enter length of side 2 =" TextWrapping="Wrap" VerticalAlignment="Top" Width="248" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="650,148,0,0" Text="Enter length of side 3 =" TextWrapping="Wrap" VerticalAlignment="Top" Width="216" FontSize="20"/>
+        <TextBox x:Name="sideA" HorizontalAlignment="Left" Height="40" Margin="864,48,0,0" Text="side 1" VerticalAlignment="Top" Width="170" FontSize="20"/>
+        <TextBox x:Name="sideB" HorizontalAlignment="Left" Height="40" Margin="864,96,0,0" Text="side 2" VerticalAlignment="Top" Width="170" FontSize="20"/>
+        <TextBox x:Name="sideC" HorizontalAlignment="Left" Height="40" Margin="864,142,0,0" Text="side 3" VerticalAlignment="Top" Width="170" FontSize="20"/>
+        <Button x:Name="goAreaTri" Content="GO" HorizontalAlignment="Left" Height="40" Margin="1044,142,0,0" VerticalAlignment="Top" Width="74" FontSize="20" Click="okGoAreaTri"/>
+        <TextBlock HorizontalAlignment="Left" Height="32" Margin="722,204,0,0" Text="Triangle Area =" TextWrapping="Wrap" VerticalAlignment="Top" Width="142" FontSize="20"/>
+        <TextBlock x:Name="answerAreaTri" HorizontalAlignment="Left" Height="38" Margin="868,206,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="164" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Height="38" Margin="650,278,0,0" Text="Solve a Quadratic Equation" TextWrapping="Wrap" VerticalAlignment="Top" Width="346" FontSize="26" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="666,328,0,0" Text="Enter coefficient a =" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="668,386,0,0" Text="Enter coefficient b =" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Height="36" Margin="668,440,0,0" Text="Enter coefficient c =" TextWrapping="Wrap" VerticalAlignment="Top" Width="190" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="1008,278,0,0" Text="ax^2 + bx + c = 0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" FontSize="24" FontWeight="Bold"/>
+        <TextBox x:Name="coA" HorizontalAlignment="Left" Height="46" Margin="856,320,0,0" Text="a" VerticalAlignment="Top" Width="166" FontSize="20"/>
+        <TextBox x:Name="coB" HorizontalAlignment="Left" Height="42" Margin="858,378,0,0" Text="b" VerticalAlignment="Top" Width="164" FontSize="20"/>
+        <TextBox x:Name="coC" HorizontalAlignment="Left" Height="46" Margin="860,434,0,0" Text="c" VerticalAlignment="Top" Width="162" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Height="34" Margin="752,500,0,0" Text="Solution =" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" FontSize="20"/>
+        <TextBlock x:Name="answerQuad" HorizontalAlignment="Left" Height="38" Margin="864,500,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="636" FontSize="20"/>
+        <Button Content="GO" HorizontalAlignment="Left" Height="40" Margin="1034,438,0,0" VerticalAlignment="Top" Width="74" FontSize="20" Click="okGoQuad"/>
+
+    </Grid>
+</Page>
